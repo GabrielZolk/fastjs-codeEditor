@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/favicon.jpg">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+    <title>FastJS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <label for="">HTML <i class="fa-brands fa-html5"></i></label>
+            <textarea name="" id="html-code" cols="30" rows="10" onkeyup="run()"></textarea>
+
+            <label for="">CSS <i class="fa-brands fa-css3-alt"></i></label>
+            <textarea name="" id="css-code" cols="30" rows="10" onkeyup="run()"></textarea>
+
+            <label for="">JavaScript <i class="fa-brands fa-square-js"></i></label>
+            <textarea name="" id="js-code" cols="30" rows="10" onkeyup="run()"></textarea>
+        </div>
+        <div class="right">
+            <div class="options">
+                <label onclick="saveCode()" id="save-label" style="cursor: pointer;">Save Code <i class="fa-solid fa-floppy-disk"></i></label>
+                <label onclick="exportCode()" id="export-label" style="cursor: pointer;">Export Code <i class="fa-solid fa-file-export"></i></label>
+            </div>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
